@@ -13,5 +13,5 @@ app.get('/api/milk', (req: Request, res: Response)=>{
 });
 
 app.listen(port, ()=> {
-console.log(`[Server]: I am running at http://localhost:${port}`);
+console.log(`[Server]: running at http://localhost:${port}`);
 });
