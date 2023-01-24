@@ -2,7 +2,7 @@ import express, {Express, Request, Response} from 'express';
 import milk from './milk.json';
 
 const app: Express = express();
-const port = 3000;
+const port = 8080;
 
 app.get('/', (req: Request, res: Response)=>{
 	res.send('this is working');
