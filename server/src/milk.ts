@@ -1,6 +1,7 @@
-{
-  "count": 99,
-  "results": [
+import { IMilk } from './types';
+ 
+
+export const milkData: IMilk [] = [
       {
           "name": "Dillion's unequaled cashew milk",
           "type": "Cashew milk",
@@ -596,4 +597,3 @@
           "id": "cf5a5299-c4dd-4699-a8d7-1eed6382888b"
       }
   ]
-}
