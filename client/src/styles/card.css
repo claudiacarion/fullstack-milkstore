@@ -1,5 +1,5 @@
 .card {
-  height: 220px;
+  height: 205px;
   width: 270px;
   background-color: #fff;
   border-radius: 6px;
@@ -20,3 +20,7 @@
   padding-right: 85px;
   border-radius: 6px;
  }
+
+.milk-name {
+  font-weight: bold;
+}

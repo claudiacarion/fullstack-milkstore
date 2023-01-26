@@ -8,8 +8,8 @@ const Card = ({ milk }: IMilkProps) => {
     <section className='card'>
       <img src={ pic } alt='milk-pic' className='milk-pic'/>
       <div className='milk-info'>
-      <h5>{milk.name}</h5>
-      <p>{milk.type}</p>
+      <p className='milk-name'>{milk.name}</p>
+      <p className='milk-type'>{milk.type}</p>
       </div>
     </section>
   )
