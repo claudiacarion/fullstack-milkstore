@@ -18,6 +18,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [milkPerPage] = useState(9);
   const [searchInput, setSearchInput] = useState('');
+  const [milkType, setMilkType] = useState('');
 
   useEffect(() => {
     const getData = async () => {
@@ -30,29 +31,42 @@ function App() {
 
   const indexOfLastMilk = currentPage * milkPerPage;
   const indexOfFirstMilk = indexOfLastMilk - milkPerPage;
-  const currentMilk = data.slice(indexOfFirstMilk, indexOfLastMilk);
   
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
   
-  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
+  //search
+  const search = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchInput(e.target.value);
   };
   
+  let searchedData = data;
+  let currentMilk = searchedData.slice(indexOfFirstMilk, indexOfLastMilk);
+
   if (searchInput.length > 0) {
-    data.filter((milk) => {
+    currentMilk = searchedData.filter((milk) => {
     return milk.name.toLowerCase().includes(searchInput.toLowerCase())
   });
   }
+
+  //filter
+  const filter = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setMilkType(e.target.value);
+};
+
+if (milkType !== '') {
+  currentMilk = searchedData.filter(milk => {
+    return milk.name.toLowerCase().includes(milkType.toLowerCase())
+  });
+}
 
   return (
     <div className="App">
       <Header />
       <section className='nav'>
-      <Search onChange={ handleSearch } value={ searchInput } />
-      <Filter />
+      <Search onChange={ search } value={ searchInput } />
+      <Filter onChange={ filter } value={ milkType }/>
       </section>
-      <Main store={ currentMilk } />
+      <Main store={ currentMilk } data={ data }/>
       <Pagination totalMilk={data.length} milkPerPage={ milkPerPage } paginate={paginate}/>
     </div>
   );

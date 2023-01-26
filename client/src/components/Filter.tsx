@@ -1,8 +1,15 @@
 import React from 'react'
 import '../styles/filter.css'
 
-const Filter = () => {
+interface Props {
+  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  value: string;
+}
+
+const Filter : React.FC<Props>  = ({ onChange, value })=> {
+
   const milkTypes = [
+    '',
     'almond',
     'cashew',
     'coconut',
@@ -18,7 +25,9 @@ const Filter = () => {
 
   return (
     <div className='filter-container'>
-      <select className='filter'>
+      <select className='filter'
+                onChange={ onChange }
+                value={ value }>
          {milkTypes.map(type => {
            return (
              <option value={type}> {type} </option>

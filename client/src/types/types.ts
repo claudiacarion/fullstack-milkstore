@@ -7,6 +7,7 @@ export interface IMilk {
 
 export interface IStoreProps {
   store : IMilk[]
+  data : IMilk[]
 }
 
 export interface IMilkProps {

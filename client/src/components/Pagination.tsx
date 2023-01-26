@@ -13,8 +13,8 @@ const Pagination = ({totalMilk, milkPerPage, paginate}: IPageProps) => {
     <nav className='pagination'>
       <ul className='pagination-list'>
         {pageNumbers.map(number => (
-          <li key={number} className='pagination-item'>
-            <a onClick={()=> paginate(number)} href='!#'>{number}</a></li>
+          <a href='!#'><li key={number} className='pagination-item' onClick={()=> paginate(number)}>
+            {number}</li></a>
         ))}
       </ul>
     </nav>
