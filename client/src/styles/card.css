@@ -1,0 +1,22 @@
+.card {
+  height: 220px;
+  width: 270px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 6px;
+  border: 1px solid rgb(230,226,227);
+}
+
+.milk-info {
+  padding-left: 10px;
+}
+
+.milk-pic {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(246,246,246);
+  padding: 15px;
+  padding-left: 85px;
+  padding-right: 85px;
+  border-radius: 6px;
+ }

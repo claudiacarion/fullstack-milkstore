@@ -6,8 +6,12 @@ import Card from './Card'
 const Main = ({ store }: IStoreProps) => {
   return (
     <section className='main'>
-      <p>here goes the milk</p>
-      <Card />
+      <p>{store.length} products</p>
+      <section className='card-container'>
+      {store.map((milk) => (
+        <Card key={milk.id} milk={milk} />
+      ))}
+    </section>
     </section>
   )
 }

@@ -1,5 +1,9 @@
-
 .header {
   color: rgb(198, 143, 161);
   text-align: center;
+  background-color: white;
+}
+
+.title {
+  background-color: white;
 }

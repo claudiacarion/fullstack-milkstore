@@ -1,3 +1,12 @@
 .main {
   background-color: rgb(254, 227, 226);
+  padding-top: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  grid-auto-rows: minmax(100, auto);
+  grid-gap: 20px;
+  justify-content: center;
 }
