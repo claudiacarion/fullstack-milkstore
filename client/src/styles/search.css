@@ -1,5 +1,17 @@
 .search {
   background-color: rgb(254, 227, 226);
-  padding-top: 20px;
+}
+
+.search-input {
+  background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+  background-size: 12%;
+  background-repeat: no-repeat;
+  background-position: left center;
   padding-left: 30px;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 6px;
+  box-shadow: none;
+  height: 25px;
+  width: 200px;
 }

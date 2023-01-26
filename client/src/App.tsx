@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Search from './components/Search';
+import Filter from './components/Filter';
 import { IMilk } from './types/types';
 
 function App() {
@@ -39,7 +40,10 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <section className='nav'>
       <Search onChange={ handleSearch } value={ searchInput } />
+      <Filter />
+      </section>
       <Main store={ data }/>
     </div>
   );

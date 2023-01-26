@@ -6,7 +6,12 @@
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 330px);
-  grid-auto-rows: minmax(100, auto);
-  grid-gap: 20px;
   justify-content: center;
+}
+
+.product-number {
+  display: grid;
+  grid-template-columns: repeat(3, 330px);
+  justify-content: center;
+  text-align: left;
 }

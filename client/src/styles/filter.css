@@ -1,0 +1,14 @@
+.filter-container {
+  background-color: rgb(254, 227, 226);
+  text-align: center;
+}
+
+.filter {
+  padding-left: 10px;
+  background-color: #fff;
+  border: 0px;
+  border-radius: 6px;
+  box-shadow: none;
+  height: 25px;
+  width: 150px;
+}

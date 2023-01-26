@@ -11,11 +11,11 @@ const Search: React.FC<Props>  = ({ onChange, value }) => {
       <div className='search'>
         <input
           type="text"
-          placeholder="enter milk name"
+          placeholder="Search"
           onChange={ onChange }
           value={ value }
-        />
-        <button>Search</button>
+          className='search-input'
+          />
     </div>
   )
 }

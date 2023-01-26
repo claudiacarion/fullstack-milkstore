@@ -2,9 +2,9 @@
   height: 220px;
   width: 270px;
   background-color: #fff;
-  margin: 20px;
   border-radius: 6px;
   border: 1px solid rgb(230,226,227);
+  margin-bottom: 40px;
 }
 
 .milk-info {

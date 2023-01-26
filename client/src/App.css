@@ -7,3 +7,11 @@
 p {
   font-size: 0.8rem;
 }
+
+.nav {
+  padding-top: 50px;
+  background-color: rgb(254, 227, 226);
+  display: grid;
+  grid-template-columns: repeat(2, 495px);
+  justify-content: center;
+}
