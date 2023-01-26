@@ -12,3 +12,10 @@ export interface IStoreProps {
 export interface IMilkProps {
   milk: IMilk
 }
+
+export interface IPageProps {
+  totalMilk: number,
+  milkPerPage: number,
+  paginate: Function,
+}
+
