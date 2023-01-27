@@ -1,5 +1,5 @@
 .card {
-  height: 205px;
+  height: 210px;
   width: 270px;
   background-color: #fff;
   border-radius: 6px;
@@ -23,4 +23,24 @@
 
 .milk-name {
   font-weight: bold;
+}
+
+.milk-details {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  text-align: left;
+}
+
+.milk-type {
+  font-size: 0.7rem;
+  color: rgb(153,153,153);
+  font-weight: bold;
+}
+
+.milk-storage {
+  font-size: 0.7rem;
+  color: rgb(195,197,157);
+  font-weight: bold;
+  text-align: right;
+  padding-right: 15px;
 }
