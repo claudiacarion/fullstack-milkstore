@@ -64,8 +64,8 @@ if (milkType !== '') {
     <div className="App">
       <Header />
       <section className='nav'>
-      <Search onChange={ search } value={ searchInput } />
-      <Filter onChange={ filter } value={ milkType }/>
+        <Search onChange={ search } value={ searchInput } />
+        <Filter onChange={ filter } value={ milkType }/>
       </section>
       <Main store={ currentMilk } data={ data }/>
       <Pagination totalMilk={data.length} milkPerPage={ milkPerPage } paginate={paginate}/>

@@ -28,12 +28,12 @@ const Filter : React.FC<Props>  = ({ onChange, value })=> {
       <select className='filter'
                 onChange={ onChange }
                 value={ value }>
-         {milkTypes.map(type => {
-           return (
-             <option value={type}> {type} </option>
-           )
-         })}
-    </select>
+          {milkTypes.map(type => {
+            return (
+              <option value={type}> {type} </option>
+            )
+          })}
+      </select>
     </div>
   )
 }
