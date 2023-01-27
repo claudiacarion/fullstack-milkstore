@@ -36,6 +36,7 @@ function App() {
   
   //search
   const search = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
     setSearchInput(e.target.value);
   };
   
