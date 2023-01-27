@@ -15,3 +15,50 @@
   justify-content: center;
   text-align: left;
 }
+
+.card {
+  height: 210px;
+  width: 270px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid rgb(230,226,227);
+  margin-bottom: 40px;
+}
+
+.milk-info {
+  padding-left: 10px;
+}
+
+.milk-pic {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(246,246,246);
+  padding: 15px;
+  padding-left: 85px;
+  padding-right: 85px;
+  border-radius: 6px;
+ }
+
+.milk-name {
+  font-weight: bold;
+}
+
+.milk-details {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  text-align: left;
+}
+
+.milk-type {
+  font-size: 0.7rem;
+  color: rgb(153,153,153);
+  font-weight: bold;
+}
+
+.milk-storage {
+  font-size: 0.7rem;
+  color: rgb(195,197,157);
+  font-weight: bold;
+  text-align: right;
+  padding-right: 15px;
+}
